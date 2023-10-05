@@ -1,6 +1,6 @@
-# Nama Proyek Anda
+# Parking Backend
 
-Deskripsi singkat atau pengantar singkat tentang proyek Anda.
+Aplikasi reservasi parkir sebagai tes recruitment vokraf
 
 ## Table of Contents
 
@@ -37,12 +37,6 @@ Langkah-langkah untuk menginstal dan menjalankan proyek Anda:
     cd Vokraf_test
     npm install
 
-2. **Install depedencies**: Clone repositori ini ke lokal Anda dengan menjalankan perintah berikut:
-
-   ```bash
-    cd Vokraf_test
-    npm install
-
 3. **Konfigurasi**: Konfigurasikan sesuai kebutuhan Anda seperti create database, misalnya mengisi file: 
 
     ```bash
@@ -56,7 +50,7 @@ Langkah-langkah untuk menginstal dan menjalankan proyek Anda:
 
 Proyek Anda sekarang harus berjalan di http://localhost:8080 (atau port lain yang telah Anda konfigurasi).
 
-Dibuat dengan usaha oleh Julian Mindria Rosyadi
+Dibuat oleh Julian Mindria Rosyadi
 
 
 
