@@ -29,4 +29,28 @@ ctrl.getAllRes = async (req, res) => {
     }
 };
 
+ctrl.AddReservation = async (req, res, next) => {
+    try {
+      const { user_id, spot_id, reservation_date, reservation_time, is_paid } = req.body;
+  
+      const newReservation = await model.AddReservation(
+        user_id,
+        spot_id,
+        reservation_date,
+        reservation_time,
+        is_paid
+      );
+  
+      await model.UpdateReservation(spot_id);
+  
+      return response(res, 200, {
+        message: 'Reservation created successfully',
+        reservation: newReservation,
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+  
+
 module.exports = ctrl 

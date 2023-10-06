@@ -37,7 +37,6 @@ ctrl.getUserByUsername = async (req, res) => {
 ctrl.createUser = async (req, res, next) => {
     try {
       const { username, password } = req.body;
-      console.log(username, password)
 
       const hashedPassword = await hash.hasPassword(password);
       const existingUser = await model.fetchUserByUsername(username);
