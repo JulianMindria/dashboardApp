@@ -1,9 +1,9 @@
 const { Pool } = require('pg')
  
 const pool = new Pool({
-  user: 'backendgo',
+  user: 'postgres',
   host: 'localhost',
-  database: 'vokrafdb',
+  database: 'electrindo',
   password: '12345678',
 })
 

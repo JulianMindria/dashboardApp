@@ -1,59 +1,36 @@
-# Parking Backend
+Intermediate backend node.js
 
-Aplikasi reservasi parkir sebagai tes recruitment vokraf
+## 🛠️ Installation Steps
 
-## Table of Contents
+1. Clone the repository
 
-- [Deskripsi](#deskripsi)
-- [Persyaratan](#persyaratan)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+```bash
+git clone https://github.com/JulianMindria/backend.git
+```
 
-## Deskripsi
+2. Install dependencies
 
-Projek ini merupakan persyaratan untuk recruitment Vokraf, bagian ini merupakan back-end yang dibangun menggunakan Node JS dengan framework Express JS
+```bash
+npm install
+# or
+yarn install
+```
 
-## Persyaratan
+3. Run the app
 
-Sebelum Anda mulai menggunakan proyek ini, pastikan Anda telah memenuhi semua persyaratan berikut:
+```bash
+npm start
+```
 
-- Node.js (versi 18.17)
-- npm (Node Package Manager, versi 10.0.0)
+🌟 You are all set!
 
-## Instalasi
+## 💻 Built with
 
-Langkah-langkah untuk menginstal dan menjalankan proyek Anda:
+-   [Nodejs](https://nodejs.org/en): JavaScript runtime
+-   [Express](https://expressjs.com/): Web framework
+-   [Postgres](https://www.postgresql.org/): DBMS
 
-1. **Clone Repository**: Clone repositori ini ke lokal Anda dengan menjalankan perintah berikut:
-
-   ```bash
-   git clone https://github.com/JulianMindria/Vokraf_test.git   
-
-2. **Install depedencies**: Pindah ke direktori proyek dan instal semua dependensi dengan menjalankan:
-
-   ```bash
-    cd Vokraf_test
-    npm install
-
-3. **Konfigurasi**: Konfigurasikan sesuai kebutuhan Anda seperti create database, misalnya mengisi file: 
-
-    ```bash
-    .env
-    _database
-
-4. **Jalankan Proyek**: Jalankan proyek Anda dengan perintah:
-
-    ```bash
-    npm start
-
-Proyek Anda sekarang harus berjalan di http://localhost:8080 (atau port lain yang telah Anda konfigurasi).
-
-Dibuat oleh Julian Mindria Rosyadi
-
-
-
-    
-
-
+<hr>
+<p align="center">
+Developed with ❤️ in Indonesia 	🇮🇩
+</p>

@@ -1,26 +1,25 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const routers = require('./src/routes/index');
-const db = require('./src/config/configdb');
-require('dotenv').config();
+const express = require('express')
+const cors = require('cors')
+const app = express()
+app.use(cors())
+const routers = require('./src/router/index')
+const db = require('./src/config/configdb')
+require('dotenv').config()
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+app.use(routers)
 
-// Middleware setup
-app.use(cors());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
-// Routes setup
-app.use(routers);
-
-// Database connection
 db.connect()
-  .then(() => {
-    const port = process.env.PORT || 8080;
-    app.listen(port, () => {
-      console.log(`Listening on port ${port}`);
-    });
-  })
-  .catch((e) => {
-    console.error("Can't connect to the database:", e);
-  });
+    .then(()=>{ 
+        app.listen(process.env.PORT, () => {
+            console.log('listening on port 8333')
+        })
+         
+    })
+    .catch((e)=>{
+        console.log("can't reach port 8333")
+})
+
+
+
